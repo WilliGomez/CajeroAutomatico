@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Operaciones</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Bienvenido, <span id="username"></span>!</h1>
+      <button onclick="consultarSaldo()">Consultar Saldo</button>
+      <br /><br />
+      <label for="montoIngresar">Ingresar Monto:</label>
+      <input
+        type="number"
+        min="0"
+        id="montoIngresar"
+        placeholder="Ingrese el monto"
+      />
+      <button onclick="ingresarMonto()">Ingresar</button>
+      <br /><br />
+      <label for="montoRetirar">Retirar Monto:</label>
+      <input
+        type="number"
+        min="0"
+        id="montoRetirar"
+        placeholder="Ingrese el monto"
+      />
+      <button onclick="retirarMonto()">Retirar</button>
+      <br /><br />
+      <button class="secondary" onclick="salir()">Salir</button>
+    </main>
+
+    <script src="operaciones.js"></script>
+  </body>
+</html>
